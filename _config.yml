@@ -1,0 +1,15 @@
+# Site settings
+title: Heros de fokaha(humor) marocain
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Un site web consacré à l'humour(fokaha).
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+collections:
+  - fokahists

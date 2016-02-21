@@ -1,0 +1,74 @@
+
+	<div class="section">
+		<div class="content">
+			<h2><span class="glyphicon glyphicon-th-large"></span> Grid of Videos</h2>
+			<p>
+				You can use this plugin for any purpose, even customize it for your own needs.
+			</p>
+		</div>
+	</div>
+
+	
+	<div class="to-top">
+		<i class="glyphicon glyphicon-chevron-up"></i>
+	</div>
+
+	<!-- jQuery 1.7.2+ -->
+	<script src="{{ "/plugin/js/jquery-1.10.2.min.js" | prepend: site.baseurl }}"></script>
+	
+	<!-- Media Boxes JS files -->
+	<script  src="{{ "/plugin/js/jquery.isotope.min.js" | prepend: site.baseurl }}"></script>
+	<script  src="{{ "/plugin/js/jquery.imagesLoaded.min.js" | prepend: site.baseurl }}"></script>
+	<script  src="{{ "/plugin/js/jquery.transit.min.js" | prepend: site.baseurl }}"></script>
+	<script  src="{{ "/plugin/js/jquery.easing.js" | prepend: site.baseurl }}"></script>
+	<script  src="{{ "/plugin/js/waypoints.min.js" | prepend: site.baseurl }}"></script>
+	<script  src="{{ "/plugin/js/modernizr.custom.min.js" | prepend: site.baseurl }}"></script>
+	<script  src="{{ "/plugin/js/jquery.magnific-popup.min.js" | prepend: site.baseurl }}"></script>
+	<script  src="{{ "/plugin/js/jquery.mediaBoxes.js" | prepend: site.baseurl }}"></script>
+
+	<script>
+
+	    $('#grid').mediaBoxes({
+	    	filterContainer: '#filter',
+	    	search: '#search',
+	    	boxesToLoadStart: 8,
+	    	boxesToLoad: 5,
+	    	horizontalSpaceBetweenBoxes: 20,
+        	verticalSpaceBetweenBoxes: 20,
+	    }); 
+
+	    $('#grid2').mediaBoxes({
+	    	filterContainer: '#filter2',
+	    	sortContainer: '#sort',
+	    	getSortData: {
+	          title: '.media-box-title',
+	          year: '.media-box-year parseInt',
+	          author: '.media-box-author'
+	        },
+	    	horizontalSpaceBetweenBoxes: 20,
+        	verticalSpaceBetweenBoxes: 20,
+	    }); 
+
+	    $('#grid3').mediaBoxes({
+	    	filterContainer: '#filter3',
+	    	search: '#search2',
+	    	sortContainer: '#sort2',
+	    	getSortData: {
+	          title: '.media-box-title',
+	          year: '.media-box-date parseInt',
+	        },
+	    	boxesToLoadStart: 9,
+	    	boxesToLoad: 10,
+	    	horizontalSpaceBetweenBoxes: 20,
+        	verticalSpaceBetweenBoxes: 20,
+	    });
+
+	</script>
+
+
+	<!-- Bootstrap JS file -->
+	<script  src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
+
+	<script  src="{{ "/js/demo.js" | prepend: site.baseurl }}"></script>
+
+

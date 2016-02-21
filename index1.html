@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Heros du fokaha(humour) marocain</h1>
+
+  <ul class="post-list">
+    {% for fk in site.fokahists %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ fk.url | prepend: site.baseurl }}">{{ fk.title }}</a>
+        </h2>
+	{{fk.content}}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>

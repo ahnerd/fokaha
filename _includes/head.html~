@@ -1,0 +1,73 @@
+
+
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+</head>
+
+<head>
+	<meta charset="UTF-8">
+
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+	<link rel="icon" href="img/favicon.ico" type="image/png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0"> <!-- needed for mobile devices -->
+  
+  	<!-- Import font -->
+  	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+
+  	<!-- Style for Bootstrap -->
+  <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
+  	
+  	<!-- Custom style for the demo-->
+ <link rel="stylesheet" href="{{ "/css/demo.css" | prepend: site.baseurl }}">
+ 
+  	<!-- Media Boxes CSS files -->
+ <link rel="stylesheet" href="{{ "/css/magnific-popup.css" | prepend: site.baseurl }}">
+ 
+ <link rel="stylesheet" href="{{ "/css/mediaBoxes.css" | prepend: site.baseurl }}">
+ 
+	<style>
+
+	/* == LETS MODIFY SOME COLORS AND STYLE FOR THE DEMO == */
+
+		
+		/* *********** STYLE OF GRID 1 *********** */
+		#search{
+  			float: right;
+  		}
+
+
+		/* *********** STYLE OF GRID 2 *********** */
+		#filter2 li a.selected,
+		#grid2 .thumbnail-overlay .fa{
+			background: #28ac86;
+		}
+		.media-boxes-drop-down-menu > li > a.selected,
+		#grid2 .media-box-date,
+		#grid2 .media-box-author{
+      		color: #28ac86;
+    	}
+    	.media-boxes-drop-down{
+  			float: right;
+  			margin-left: 5px;
+  		}
+
+
+    	/* *********** STYLE OF GRID 3 *********** */
+		#sort2 .media-boxes-drop-down-menu > li > a.selected,
+		#filter3 .media-boxes-drop-down-menu > li > a.selected,
+		#grid3 .media-box-date{
+      		color: #09b0dd;
+    	}  	
+    	#grid3 .thumbnail-overlay .fa{
+			background: #09b0dd;
+		}	
+
+	</style>
+	
+</head>
+
